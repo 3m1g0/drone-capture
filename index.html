@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Xyzcharts</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.css' type='text/css'
+  />
+  <link rel="stylesheet" href="https://viewing.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css">
+<link rel="stylesheet" href="styles.4a07a2937eaaabb77460.css"></head>
+
+<body>
+  <app-root></app-root> 
+  <!-- <div id="viewer"></div>
+  <script>
+    function initialize() {
+      var options = {
+        'document': 'urn:./assets/20160124OTC-Conference Center.ifc',
+        'env': 'AutodeskProduction',
+        // 'getAccessToken': getToken,
+        // 'refreshToken': getToken,
+      };
+      var viewerElement = document.getElementById('viewer');
+      var viewer = new Autodesk.Viewing.Viewer3D(viewerElement, {});
+
+      Autodesk.Viewing.Initializer(options, function () {
+        viewer.initialize();
+        loadDocument(viewer, options.document);
+      });
+    }
+    function loadDocument(viewer, documentId) {
+      // Find the first 3d geometry and load that.
+      Autodesk.Viewing.Document.load(documentId, function (doc) {
+        var geometryItems = [];
+        geometryItems = Autodesk.Viewing.Document.getSubItemsWithProperties(doc.getRootItem(), {
+          'type': 'geometry',
+          'role': '3d'
+        }, true);
+
+        if (geometryItems.length > 0) {
+          viewer.load(doc.getViewablePath(geometryItems[0]));
+        }
+      }, function (errorMsg) {// onErrorCallback
+        alert("Load Error: " + errorMsg);
+      });
+    }
+  </script> -->
+<script type="text/javascript" src="runtime.5ea1ab6a7c0a37484243.js"></script><script type="text/javascript" src="polyfills.d2f7420719348d2468dd.js"></script><script type="text/javascript" src="main.350913bdad54651606ea.js"></script></body>
+
+</html>
